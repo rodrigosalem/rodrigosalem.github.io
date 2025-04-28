@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cardo&display=swap');
+
+body {
+  background-color: #f7f0e8; /* soft beige background */
+  margin: 0;
+  padding: 0;
+  font-family: 'Cardo', serif;
+  color: #5c4033; /* deep brown text color */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically for "Under construction" */
+  align-items: center;
+  height: 100vh; 
+  text-align: center;
+}
+
+h1 {
+  font-size: 12px; /* Smaller size for the "Carol Nogueira Marketing Consulting" text */
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  margin-bottom: 20px;
+  font-family: 'Roboto', sans-serif; /* Non-serif font */
+  padding-top: 20px; /* Adds space from the top of the screen */
+  position: absolute; /* Position it at the top */
+  top: 20px; /* 20px from the top of the page */
+}
+
+h2 {
+  font-size: 60px; /* Larger size for "Under construction" */
+  font-weight: 500;
+  font-family: 'Cardo', serif; /* Cardo font for the "Under construction" */
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  margin: 5px 0;
+}
+
+/* Link styling */
+a {
+  color: #5c4033;
+  text-decoration: underline; /* Ensure links are underlined by default */
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Links at the bottom */
+.bottom-text {
+  position: absolute;
+  bottom: 20px; /* Position links 20px from the bottom of the screen */
+  margin-bottom: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+/* Responsive adjustments (Mobile specific) */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 48px; /* Doubled from 24px */
+    top: 10px; /* Keep it a bit closer to the top */
+  }
+
+  h2 {
+    font-size: 120px; /* Doubled from 60px */
+    text-align: center; /* Ensure it's centered */
+    margin-top: 20px; /* Adds space above the text */
+    margin-bottom: 20px; /* Adds space below the text */
+  }
+
+  p {
+    font-size: 32px; /* Doubled from 16px */
+  }
+
+  .bottom-text {
+    bottom: 10px; /* Ensure links are still at the bottom but not too far */
+    font-size: 28px; /* Doubled from 14px */
+  }
+}
